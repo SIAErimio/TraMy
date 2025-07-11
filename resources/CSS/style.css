@@ -1,9 +1,23 @@
-.picture {
-    width: 340px;
-    height: 450px;
+.picture,
+.picture2 {
+  width: 180px;
+  height: 250px;
+  border: 2px solid;
+  border-radius: 20%;
+  margin-right: 100px;
+
+  animation-name: bounceLeftRight;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; /* reverse every other cycle */
+  animation-timing-function: ease-in-out;
 }
 
 .picture2 {
-    width: 410px;
-    height: 450px;
+  width: 240px;
+}
+
+@keyframes bounceLeftRight {
+  from { transform: translateX(0); }
+  to { transform: translateX(200px); }
 }
