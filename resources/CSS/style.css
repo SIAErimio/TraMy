@@ -66,6 +66,7 @@ h1 {
 .contact {
   background-color: #d98880;
   color:white;
+  text-decoration: none;
 }
 
 @keyframes bounceLeftRight {
